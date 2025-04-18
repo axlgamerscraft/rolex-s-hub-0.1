@@ -386,8 +386,8 @@ local CloseButton = Create("TextButton", TopBar, {
 })
 CloseButton.MouseButton1Click:Connect(function()
   MakeDialog({
-        Title = "🚨 ليش تريد تغاق 🚨",
-        Description = "هل انت متاكد بي اخفاء السكربت؟؟؟؟؟ ",
+        Title = "🚨لماذا تريد اغلاق🚨",
+        Description = "هل انت متاكد بغلاق السكربت؟؟؟؟؟ ",
         YesCallback = function()
           local tween = TweenService:Create(MainFrame, TweenInfo.new(0.15, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 0, 0, 0)})
   tween:Play()

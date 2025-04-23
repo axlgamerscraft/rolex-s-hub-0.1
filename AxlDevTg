@@ -1346,7 +1346,7 @@ end
 
 -- /////////// --
 function redzlib:GetIcon(index)
-	if type(index) ~= "string" or index:find("rbxassetid://") or #index == 0 then
+	if type(index) ~= "string" or index:find("rbxassetid://131053125178720") or #index == 0 then
 		return index
 	end
 	
@@ -1583,10 +1583,10 @@ function redzlib:MakeWindow(Configs)
 			Title = "اغلاق",
 			Text = "هل حقا تريد الاغلاق",
 			Options = {
-				{"Confirm", function()
+				{"نعم", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"لا"}
 			}
 		})
 	end
@@ -1595,13 +1595,13 @@ function redzlib:MakeWindow(Configs)
 		WaitClick = true
 		
 		if Minimized then
-			MinimizeButton.Image = "rbxassetid://10734896206"
+			MinimizeButton.Image = "rbxassetid://131053125178720"
 			CreateTween({MainFrame, "Size", SaveSize, 0.25, true})
 			ControlSize1.Visible = true
 			ControlSize2.Visible = true
 			Minimized = false
 		else
-			MinimizeButton.Image = "rbxassetid://10734924532"
+			MinimizeButton.Image = "rbxassetid://131053125178720"
 			SaveSize = MainFrame.Size
 			ControlSize1.Visible = false
 			ControlSize2.Visible = false
